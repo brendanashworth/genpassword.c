@@ -1,5 +1,10 @@
-// genpassword.h
-#define ARR_SIZE(arr) ( sizeof((arr)) / sizeof((arr[0])) )
+// genpassword.h; only declare if not declared yet...
+#ifndef GENPASSWORD
+#define GENPASSWORD
 
-// Declare functions
-char *generate_password(int length);
+	#define ARR_SIZE(arr) ( sizeof((arr)) / sizeof((arr[0])) )
+
+	// Declare functions
+	char *generate_password(int length);
+
+#endif
