@@ -1,0 +1,9 @@
+{
+  "name": "genpassword.c",
+  "version": "0.0.1",
+  "repo": "boboman13/genpassword.c",
+  "description": "Random password generating library, in C",
+  "keywords": ["password", "generate", "generator"],
+  "license": "MIT",
+  "src": ["src/genpassword.c", "src/genpassword.h"]
+}
