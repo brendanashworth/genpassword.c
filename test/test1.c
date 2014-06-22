@@ -17,7 +17,7 @@ int main() {
 	// First test
 	int length = 10;
 	char *password = generate_password(length);
-	if (strcmp(password, "hadhcegbhg") == 0) {
+	if (strlen(password) == length) {
 		printf("\x1B[32mFirst test passed. \n"); // Print in green
 	} else {
 		passed = false;
@@ -28,7 +28,7 @@ int main() {
 	// Second test
 	length = 15;
 	password = generate_password(length);
-	if (strcmp(password, "addacdadaffhaad") == 0) {
+	if (strlen(password) == length) {
 		printf("\x1B[32mSecond test passed. \n"); // Print in green
 	} else {
 		passed = false;
