@@ -1,5 +1,6 @@
 Genpassword
 =====
+[![Build Status](https://travis-ci.org/boboman13/genpassword.c.svg?branch=master)](https://travis-ci.org/boboman13/genpassword.c)
 
 > Genpassword is a C library for generating unique passwords. Currently, the only available character pool for passwords is [a-zA-Z0-9].
 
