@@ -10,11 +10,18 @@ char *generate_password(int length);
 
 **Important Note**: It is *necessary* to seed your own random for security reasons. *Never* seed more than once, unless you know what you are doing!
 
+### Installation
+Installation of this library is accomplished via CLib.
+```bash
+$ clib install boboman13/genpassword.c
+```
+This will give you a `deps` folder with the library.
+
 ### Example
 ```c
 #include <stdio.h>
 #include <time.h>
-#include "deps/genpassword.c"
+#include "deps/genpassword.c/genpassword.c"
 
 int main() {
 	// This is where we seed.
