@@ -11,10 +11,13 @@
 int main() {
 	int passed = true;
 
+	// Seed
+	srand(1337);
+
 	// First test
 	int length = 10;
 	char *password = generate_password(length);
-	if (strcmp(password, "hbbccaagdf") == 0) {
+	if (strcmp(password, "hadhcegbhg") == 0) {
 		printf("\x1B[32mFirst test passed. \n"); // Print in green
 	} else {
 		passed = false;
@@ -25,7 +28,7 @@ int main() {
 	// Second test
 	length = 15;
 	password = generate_password(length);
-	if (strcmp(password, "afecdhhbaehbffa") == 0) {
+	if (strcmp(password, "addacdadaffhaad") == 0) {
 		printf("\x1B[32mSecond test passed. \n"); // Print in green
 	} else {
 		passed = false;
