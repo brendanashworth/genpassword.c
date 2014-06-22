@@ -1,0 +1,9 @@
+language: c
+
+install: make test
+
+script: ./run
+
+compiler:
+  - gcc
+  - clang

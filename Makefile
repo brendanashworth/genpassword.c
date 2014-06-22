@@ -1,6 +1,7 @@
 # Makefile for genpassword.c
+# If you want to set your own compiler, export the $CC environment variable.
 test:
-	gcc test/test1.c -o run
+	$(CC) test/test1.c -o run
 
 clean:
 	rm -f run
