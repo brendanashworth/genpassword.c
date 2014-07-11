@@ -38,3 +38,18 @@ int main() {
 }
 
 ```
+
+### Performance
+The library is quite fast. According to our *benchmark*...
+```bash
+$ make bench
+$ ./bench
+```
+
+Ran on a Macbook Pro.
+
+```
+ -> Benchmarking genpassword...
+ -> 3 runs, 100000 iterations each run, finished in 0.056893 seconds
+ -> 5273068.32 i/sec
+```
