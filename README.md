@@ -31,6 +31,9 @@ int main() {
 	char *password = generate_password(length);
 
 	printf("%s\n", password);
+
+	// We use malloc(), so you must free().
+	free(password);
 	return 0;
 }
 

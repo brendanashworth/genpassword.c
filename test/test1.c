@@ -25,6 +25,9 @@ int main() {
 		printf("Generated password: %s, at length: %i\n", password, length);
 	}
 
+	// free memory
+	free(password);
+
 	// Second test
 	length = 15;
 	password = generate_password(length);
@@ -38,6 +41,9 @@ int main() {
 
 	// Return to normal color.
 	printf("\x1B[0m");
+
+	// free memory
+	free(password);
 
 	return !passed;
 }
