@@ -5,7 +5,11 @@ CC := gcc
 test:
 	$(CC) test/test1.c -o run
 
-clean:
-	rm -f run
+bench:
+	$(CC) test/bench1.c -o bench
 
-.PHONY: clean test
+clean:
+	-rm -f run
+	-rm -f bench
+
+.PHONY: clean test bench
